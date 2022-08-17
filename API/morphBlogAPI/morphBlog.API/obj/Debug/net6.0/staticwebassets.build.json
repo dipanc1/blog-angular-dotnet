@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "7HAi3uSk6Rihagbh6F1KJjGSZDJb+SUTkWv6dOWUaCw=",
+  "Source": "morphBlog.API",
+  "BasePath": "_content/morphBlog.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
