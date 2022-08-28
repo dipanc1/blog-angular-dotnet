@@ -1,0 +1,11 @@
+<div class="container" *ngIf="post">
+  <div class="card" style="max-width: 500px; margin: 0 auto;">
+    <img [src]="post.featuredImage" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{post.title}}</h5>
+      <article class="card-text" >
+        {{post.content}}
+      </article>
+    </div>
+  </div>
+</div>

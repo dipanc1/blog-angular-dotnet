@@ -1,0 +1,47 @@
+<div class="container" *ngIf="post">
+  <h1 class="my-5">Add Blog</h1>
+  <form #form="ngForm" (ngSubmit)="onSubmit()">
+
+    <div class="mb-3">
+      <label class="form-label">Title</label>
+      <input name="title" [(ngModel)]="post.title" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Content</label>
+      <textarea name="content" [(ngModel)]="post.content" type="text" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Summary</label>
+      <textarea name="summary" [(ngModel)]="post.summary" type="text" class="form-control"></textarea>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Featured Image URL</label>
+      <input name="featuredImage" [(ngModel)]="post.featuredImage" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Author</label>
+      <input name="author" [(ngModel)]="post.author" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">URL Handle</label>
+      <input name="urlHandle" [(ngModel)]="post.urlHandle" type="text" class="form-control">
+    </div>
+    <div class="form-check mb-3">
+      <input name="visible" [(ngModel)]="post.visible" type="checkbox" class="form-check-input">
+      <label class="form-check-label">Visible</label>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Published Date</label>
+      <input name="publishDate" [(ngModel)]="post.publishDate" type="text" class="form-control">
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Updated Date</label>
+      <input name="updateDate" [(ngModel)]="post.updateDate" type="text" class="form-control">
+    </div>
+
+    <div class="mb-3">
+      <input type="submit" class="btn btn-success">
+    </div>
+  </form>
+
+</div>
